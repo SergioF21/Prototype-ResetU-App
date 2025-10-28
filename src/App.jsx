@@ -1,13 +1,40 @@
 import { useState } from 'react'
-import Home from './pages/Home'
-import Login from './pages/Login'
-import Dashboard from './pages/Dashboard'
+import reactLogo from './assets/react.svg'
+import viteLogo from '/vite.svg'
+import './App.css'
 
-export default function App() {
-  const [page, setPage] = useState('home')
-  const [user, setUser] = useState(null)
+function App() {
+  const [count, setCount] = useState(0)
 
-  if (page === 'home') return <Home onStart={() => setPage('login')} />
-  if (page === 'login') return <Login onLogin={(u) => { setUser(u); setPage('dashboard'); }} />
-  if (page === 'dashboard') return <Dashboard user={user} onLogout={() => setPage('home')} />
+  return (
+    <>
+      <div>
+        <a href="https://vite.dev" target="_blank">
+          <img src={viteLogo} className="logo" alt="Vite logo" />
+        </a>
+        <a href="https://react.dev" target="_blank">
+          <img src={reactLogo} className="logo react" alt="React logo" />
+        </a>
+      </div>
+      <h1>Vite + React</h1>
+      <div className="card">
+        <button onClick={() => setCount((count) => count + 1)}>
+          count is {count}
+        </button>
+        <p>
+          Edit <code>src/App.jsx</code> and save to test HMR
+        </p>
+      </div>
+      <div className="min-h-screen flex items-center justify-center bg-gray-100">
+        <h1 className="text-4xl font-bold text-blue-600">
+            ¡Reset U funcionando con Tailwind! 🚀
+        </h1>
+      </div>
+      <p className="read-the-docs">
+        Click on the Vite and React logos to learn more
+      </p>
+    </>
+  )
 }
+
+export default App
