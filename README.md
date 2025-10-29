@@ -14,3 +14,30 @@ The React Compiler is not enabled on this template because of its impact on dev 
 ## Expanding the ESLint configuration
 
 If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+
+
+# Reset U 💚  
+**Aplicación web progresiva (PWA)** para la gestión del bienestar universitario.
+
+## 🚀 Descripción
+Reset U busca reducir el estrés académico y mejorar los hábitos de descanso y organización de los estudiantes universitarios de Lima Metropolitana.  
+Esta primera versión es un MVP accesible por web con diseño móvil y enfoque en la personalización de la experiencia del usuario.
+
+## 🧩 Tecnologías
+- React + Vite  
+- TailwindCSS  
+- Context API  
+- LocalStorage para persistencia temporal  
+- (Opcional) Firebase para autenticación y datos  
+
+## 📂 Estructura
+- `/components`: Elementos de UI reutilizables  
+- `/pages`: Vistas principales de la app  
+- `/services`: Lógica de datos (mock o API real)  
+
+## ▶ Instalación
+```bash
+git clone https://github.com/<tu-usuario>/reset-u.git
+cd reset-u
+npm install
+npm run dev
